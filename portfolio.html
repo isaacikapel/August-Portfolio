@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwindconfig.js"></script>
+  <!-- this is for boxicons icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <!-- this is for fa icons -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./portfolio.css">
+  <title>Isaac Ikapel</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 navbar">
+    <img src="./images/_1e6e3e84-f17f-44a5-b1c1-e96bf187efb5.jpeg" alt="Logo" class="w-20 cursor-pointer mr-14 border rounded-full" >
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+    <div class="flex items-center gap-4" >
+      <button><i class="bx bx-moon"></i></button>
+    <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <i class='bx bx-phone-call 'class="w-3"></i></a>
+
+    <button class="block md:hidden ml-3 transition duration-500" onclick="openMenu()">
+      <img src="./images/menu-regular-60.png" alt="" class="w-6">
+    </button>
+    </div>
+
+
+    <!----------- mobile menu ---------->
+
+    <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 gap-4 h-screen bg-slate-900 text-slate-50 transition duration-500">
+
+      <div class="absolute right-6 top-6 border-2 border-currently transition duration-500" onclick="closeMenu()">
+        <img src="./images/x-regular-204 (1).png" alt="" class="w-5 cursor-pointer">
+      </div>
+
+      <li><a href="#top" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About me</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+  <!---------- header --------->
+
+  <div class=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 header mb-10 scroll-mt-20">
+    <img src="./images/1000135680.jpg" alt="" class="rounded-full w-32 mt-10">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hi! I'm Isaac Ikapel <img src="./images/hi.png" alt="" class="w-6"> </h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Fullstack Software developer & Insurance agent Kenya</h1>
+    <p class="max-w-2xl mx-auto">I am a fullstack Software developer from Nairobi, Kenya with proficiency in web development and insurance marketing skills with over 5 years experience having worked as a freelancer and an agent in Prudential Kenya</p>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#000] to-[#da7d20] text-white flex items-center gap-2">Contact me <i class='bx bx-phone-call 'class="w-3"></i></a>
+
+      <button id="downloadBtn" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">My resume <i class='bx bx-download 'class="w-3"></i></button>
+      <!-- <button id="downloadBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"></button> -->
+    </div>
+    
+  </div>
+
+
+
+
+
+
+  <!-------- about me --------->
+  <div id="about" class="w-full px-[12%] py-10 scroll-mt-20 about">
+    <h4 class="text-center mb2 text-lg">Introduction</h4>
+    <h2 class="text-center text-5xl">About me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20" >
+      <div class="max-w-max mx-auto relative">
+        <img src="./images/6975ef43-b011-4b11-b633-db274c4a7fb9.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+
+        <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+          <img src="./images/_b90433e4-8a48-4f3f-9400-16668e55068d.jpeg" alt="" class="rounded-full w-full">
+          <img src="./images/" alt="" class="w-1/4 absolute-top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        </div>
+
+      </div>
+      <div class="flex-1">
+        <p class="mb-10 max-w-2xl">I am an experienced Fullstack Developer with over a decade of professional expertise in the field to the fieldof marketing as an Insurance Agent at Prudential Assurance Company. Throughout my career, I have had collaborations with presitgious organisations, contributing to their success and growth.</p>
+
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          <li class="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+            <img src="./images/code-alt-regular-204.png" alt="" class="w-7 mt-3">
+            <h3 class="my-4 font-semibold text-blue-700">Languages</h3>
+            <p class="textgray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, PHP, Laravel, Vue, Angular</p>
+          </li>
+          <li class="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+            <img src="./images/graduation-solid-204.png" alt="" class="w-7 mt-3">
+            <h3 class="my-4 font-semibold text-blue-700">Education</h3>
+            <p class="textgray-600 text-sm">10 Tech in Software Development</p>
+          </li>
+          <li class="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+            <img src="./images/briefcase-alt-2-solid-204.png" alt="" class="w-7 mt-3">
+            <h3 class="my-4 font-semibold text-blue-700">Projects</h3>
+            <p class="textgray-600 text-sm">More than 10 projects for the last 3 years</p>
+          </li>
+        </ul>
+        <h4 class="my-6 text-gray-700">Tools I use</h4>
+
+        <ul class="flex items-center gap-3 sm:gap-5">
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+            <img src="./images/adobe-logo-204.png" alt="" class="w-5 sm:w-7">
+          </li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+            <img src="images/visual-studio-logo-204.png" alt="" class="w-5 sm:w-7">
+          </li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+            <img src="images/mongodb-logo-204.png" alt="" class="w-5 sm:w-7">
+          </li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+            <img src="./images/firebase-logo-204.png" alt="" class="w-5 sm:w-7">
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+            <img src="./images/github-logo-204.png" alt="" class="w-5 sm:w-7">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!------- services ------->
+  <div id="services" class="w-full px-[8%] py-10 scroll-mt-20 mb-10">
+    <h4 class="text-center mb2 text-lg">What I offer</h4>
+    <h2 class="text-center text-5xl">My Services</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I am an experienced Fullstack Developer with over a decade of professional expertise in the field to the fieldof marketing as an Insurance Agent at Prudential Assurance Company. Throughout my career, I have had collaborations with presitgious organisations, contributing to their success and growth.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 w-4xl">
+      <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+        <img src="./images/web - icon.png" alt="" class="w-10">
+        <h3 class="my-4 font-semibold text-blue-700">Web Design</h3>
+        <p class="text-sm text-gray-600 leading-5">Web design is the process of building and, programming...</p>
+        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow-alt-regular-204.png" alt="" class="w-4"></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+        <img src="./images/mobile - icon.jpeg" alt="" class="w-10">
+        <h3 class="my-4 font-semibold text-blue-700">Mobile App Development</h3>
+        <p class="text-sm text-gray-600 leading-5">Web design is the process of building and, programming...</p>
+        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow-alt-regular-204.png" alt="" class="w-4"></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+        <img src="./images/ux - icon.jpeg" alt="" class="w-10">
+        <h3 class="my-4 font-semibold text-blue-700">UX/UI Design</h3>
+        <p class="text-sm text-gray-600 leading-5">Web design is the process of building and, programming...</p>
+        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow-alt-regular-204.png" alt="" class="w-4"></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-gray-500 hover:-translate-y-1 duration-500 shadow-[4px_4px_0_#000]">
+        <img src="./images/sales - icon.jpeg" alt="" class="w-10">
+        <h3 class="my-4 font-semibold text-blue-700">Sales Marketing</h3>
+        <p class="text-sm text-gray-600 leading-5">Web design is the process of building and, programming...</p>
+        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow-alt-regular-204.png" alt="" class="w-4"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!--------- my work --------->
+  <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb2 text-lg">My portfolio</h4>
+    <h2 class="text-center text-5xl">My latest works</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my development portfolio! Explore a collection of projects showcasing my expertise in Software Development and Marketing Sector.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 w-4xl">
+
+      <div class="aspect-square rounded-lg relative cursor-pointer flex duration-500 group">
+        <video src="./images/ik-code-club.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">IK - CODE CLUB <br> management</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/Why I Love Being a Software Engineer.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">BACK-END API</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/php alumni system.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">PHP ALUMNI SYSTEM</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/software development website.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">A SOFTWARE BLOG</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/restaurant website.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">5 - STAR RESTAURANT WEBSITE</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/Why I Love Being a Software Engineer.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">A REACT POS SYSTEM</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/Laravel management.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">A LARAVEL WEBSITE</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+      <div class="aspect-square rounded-lg relative cursor-pointer flex group">
+        <video src="./images/Database management.mp4" autoplay muted loop></video>
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/3 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-10 flex"><h3 class="my-4 font-semibold text-blue-700">DATABASE MANAGEMENT</h3><img src="./images/right-top-arrow-circle-solid-228.png" alt="" class="w-6 mr-3"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!------- contact -------->
+  <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-no-repeat bg-[length:90%_auto] bg-center">
+    <h4 class="text-center mb2 text-lg">Connect with me</h4>
+    <h2 class="text-center text-5xl">Get in touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Let's talk! Send me your questions, comments and feedback via the form below</p>
+
+    <form action="" class="max-w-2xl mx-auto">
+      <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+        <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+
+        <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+      </div>
+      <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+      <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit now <img src="./images/white arrow.png" alt="" class="w-4"> </button>
+    </form>
+
+    </div>
+
+
+ 
+ <script src="portfolio.js"></script> 
+</body>
+</html>
